@@ -25,7 +25,7 @@ pipeline {
 
 }
                    sh 'docker push kalyani208/project:1'
-                    #docker push kalyani208/project:1
+                    //docker push kalyani208/project:1
                 }
             }
         }
