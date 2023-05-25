@@ -13,7 +13,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'docker build .'
+                    sh 'docker build -t 1 .'
                 }
             }
         }
@@ -24,7 +24,8 @@ pipeline {
                    sh 'docker login -u kalyani208 -p ${dockercred}'
 
 }
-                   sh 'docker push kalyani208/project'
+                   sh 'docker push kalyani208/project:1'
+                    #docker push kalyani208/project:1
                 }
             }
         }
